@@ -1,0 +1,12 @@
+#include <iostream>
+using namespace std ;
+int main(void) {
+    int n ;
+    cout << "Give an integer between 1 and 31" ;
+    cin >> n ;
+    while (n < 1 || n > 31) {
+        cout << "Like I already politely asked before, give an integer between 1 and 31." << endl ;
+        cin >> n ;
+    }
+    return 0 ;
+}
