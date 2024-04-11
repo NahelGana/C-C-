@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std ;
+
+int main(void) {
+    int a, b ;
+    cout << "Give two values" ;
+    cin >> a >> b;
+    if ((a > 0 && b > 0) || (a < 0 && b < 0)) {
+        cout << "The product of " << a << " and of " << b << " is positive." ;
+    }
+    else {
+        cout << "The product of " << a << " and of " << b << " is negative." ;
+    }
+    return 0 ;
+}
