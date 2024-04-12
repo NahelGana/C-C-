@@ -23,7 +23,7 @@ int main(void) {
             }
             break ;
         default : cout << "Inexistant operator" ;
-            break ;
-        }
+        break ;
+    }
     return 0 ;
 }
