@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+
+int main(void) {
+    int i ;
+    for (i = 0 ; i <= 20 ; i = i + 2) {
+        cout << i << " " ;
+    }
+    i = 0 ;
+    cout << endl ;
+    while (i<=20) {
+        cout << i << " " ;
+        i = i + 2 ;
+    }
+}
