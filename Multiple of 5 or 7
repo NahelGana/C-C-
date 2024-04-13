@@ -17,4 +17,5 @@ int main(void) {
     else if (n % 5 != 0) {
         cout << n << " is not a multiple of 5 and is not a multiple of 7." ;
     }
+    return 0 ;
 }
