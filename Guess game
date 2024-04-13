@@ -1,0 +1,24 @@
+#include <math.h>
+#include <stdlib.h>
+#include <iostream>
+using namespace std ;
+
+int main(void) {
+    int value, random, i ;
+    random = rand() ;
+    i = 0;
+    do {
+        cout << "Guess the value !";
+        cin >> value ;
+        i = i + 1 ;
+    }
+    while ((value != random) && (i < 6)) ;
+    if (value == random) {
+        cout << "You have found the good value. You're the best !" ;
+    }
+    else {
+        cout << "You did not find the good value. Loser !" ;
+    }
+    cout << endl << "The value was " << random << ".";
+    return 0 ;
+}
