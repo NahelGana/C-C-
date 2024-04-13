@@ -1,0 +1,32 @@
+#include <stdlib.h>
+#include <iostream>
+using namespace std ;
+
+int main(void) {
+    float a, b, c ;
+    cout << "Give three values !" ;
+    cin >> a >> b >> c ;
+    if (a == 0) {
+        if (b == 0) {
+            if (c == 0) {
+                cout << "All the numbers are solutions." ;
+            }
+            else {
+                cout << "There is no real solution." ;
+            }
+        }
+        else {
+            cout << "The only real solution is " << -c/b << "." ;
+        }
+    }
+    else if (b*b-4*a*c<0) {
+        cout << "There is no real solution." ;
+    }
+    else if (b*b-4*a*c == 0) {
+        cout << "The only real solution is " << (-b+sqrt(b*b-4*a*c))/(2*a) << " ." ;
+    }
+    else {
+        cout << "The two real solutions are " << (-b+sqrt(b*b-4*a*c))/(2*a) << " and " << (-b-sqrt(b*b-4*a*c))/(2*a) << " ." ;
+    }
+    return 0 ;
+}
