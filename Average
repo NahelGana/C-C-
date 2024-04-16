@@ -1,0 +1,11 @@
+#include <iostream>
+using namespace std ;
+
+int main(void) {
+    float a, b, average ;
+    cout << "Give two values !" ;
+    cin >> a >> b ;
+    average = (a+b)/2 ;
+    cout << "The average is : " << average ;
+    return 0 ;
+}
