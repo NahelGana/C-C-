@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std ;
+
+int saisie_valeur(void) {
+    int n ;
+    do {
+        cout << "Donnez un entier entre 0 et 20." ;
+        cin >> n ;
+    } while ((n < 0) || (n > 20)) ;
+    return n ;
+}
+int main(void) {
+    cout << saisie_valeur() ;
+    return 0 ;
+}
