@@ -1,12 +1,13 @@
 #include <iostream>
 using namespace std ;
-float moyenne(float a, float b) {
+
+float average(float a, float b) {
     return (a+b)/2 ;
 }
 int main(void) {
     float v1, v2 ;
-    cout << "Donner deux réels." << endl ;
+    cout << "Give two reals !" << endl ;
     cin >> v1 >> v2 ;
-    cout << "La moyenne de " << v1 << " et " << v2 << " est " << moyenne(v1,v2) << "." ;
+    cout << "The average of " << v1 << " and of " << v2 << " is " << average(v1, v2) << "." ;
     return 0 ;
 }
