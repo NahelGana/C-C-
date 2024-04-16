@@ -1,0 +1,12 @@
+#include <iostream>
+using namespace std ;
+
+int main(void) {
+  int val1, val2 ;
+  cout << "Input an integer number !" << endl ;
+  cin >> val1 ;
+  cout << "Input an integer number !" << endl ;
+  cin >> val2 ;
+  cout << "You have put the values " << val1 << " and " << val2 << endl ;
+  return 0 ;
+}
