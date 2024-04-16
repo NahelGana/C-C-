@@ -1,13 +1,13 @@
 #include <iostream>
 using namespace std ;
 
-void dix_suivants(int n) {
+void ten_followings(int n) {
     int i ;
     for (i = 1 ; i <= 10 ; i = i + 1) {
         cout << n + i << " " ;
     }
 }
 int main(void) {
-    dix_suivants(17) ;
+    ten_followings(17) ;
     return 0 ;
 }
