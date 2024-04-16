@@ -1,0 +1,30 @@
+#include <iostream>
+#include <time.h>
+#include <stdlib.h>
+using namespace std;
+
+
+int randbis(void) {
+    return rand() ;
+}
+
+int main (void) {
+    int vrand, i, n ;
+    i = 0 ;
+    srand(time(NULL)) ;
+    vrand = rand() % 30 + 1 ;
+    cout << "The random value is : " << vrand << "." << endl ;
+    do {
+        vrand = rand() % 30 + 1 ;
+    } while (vrand < 10 || vrand > 25) ;
+    cout << "The new random value is : " << vrand << "." << endl ;
+    vrand = randbis() ;
+    do {
+        cout << "Could you find the new random value ?" ;
+        cin >> n ;
+        i = i + 1 ;
+    } while ((i < 5) || (n == vrand)) ;
+    cout << "The new random value was : " << vrand << "." << endl ;
+    return 0 ;
+}
+
