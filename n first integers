@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std ;
+
+int sum(int n) {
+    return n*(n+1)/2 ;
+}
+int main(void) {
+    int v ;
+    do {
+        cout << "Give an integer !" << endl ;
+        cin >> v ;
+    } while (v < 0) ;
+    cout << "The sum for i going from 0 to " << v << " is " << sum(v) << "." ;
+    return 0 ;
+}
