@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std ;
+
+int main(void) {
+    float a, b ;
+    cout << "Give two values !" ;
+    cin >> a >> b ;
+    if (a < b) {
+        cout << a << " is inferior to " << b ;
+    }
+    else if (b < a) {
+        cout << b << " is inferior to " << a ;
+    }
+    else {
+        cout << a << " and " << b << " are equals." ;
+    }
+}
