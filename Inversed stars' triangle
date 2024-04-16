@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std ;
+
+int main(void) {
+    int i, j, n ;
+    cout << "What's the height of the triangle ?" ;
+    cin >> n ;
+    for (i = 1 ; i <= n ; i = i + 1) {
+        for (j = 1 ; j <= n - i + 1 ; j = j + 1) {
+            cout << "*" ;
+        }
+        cout << endl ;
+    }
+    return 0 ;
+}
