@@ -1,0 +1,10 @@
+#include <iostream>
+using namespace std ;
+
+int main(void) {
+    int n ;
+    cout << "Give a number of days !" ;
+    cin >> n ;
+    cout << n << " days are equivalents to " << n / 7 << " weeks " << " and " << n % 7 << " days." ;
+    return 0 ;
+}
