@@ -1,0 +1,64 @@
+#include <iostream>
+#include <math.h>
+#include <stdlib.h>
+using namespace std ;
+
+
+
+double maximum(double a, double b) {
+    if (a > b) {
+        return a ;
+    }
+    else {
+        return b ;
+    }
+}
+
+double factorial(int n) {
+    double product, i ;
+    product = 1 ;
+    for (i = 1 ; i <= n ; i = i + 1) {
+        product = product * i ;
+    }
+    return product ;
+}
+
+double sum_powers_2(int n) {
+    double i, sum ;
+    sum = 0 ;
+    for (i = 0 ; i <= n ; i = i + 1) {
+        sum = sum + pow(2,i) ;
+    }
+    return sum ;
+}
+
+int main(void) {
+    float m1, m2 ;
+    int f, s, r1, r2, r3 ;
+    cout << "Do you want to calculate the average of two values ? If yes, write 1 !" ;
+    cin >> r1 ;
+    if (r1 == 1) {
+        cout << "Give two values !" ;
+        cin >> m1 >> m2 ;
+        cout << "The maximum of those two numbers is " << maximum(m1, m2) << "." << endl ;
+    }
+    cout << "Do you want to calculate the factorial of a number ? If yes, write 1 !" ;
+    cin >> r2 ;
+    if (r2 == 1) {
+        do {
+            cout << "Give an integer !" << endl ;
+            cin >> f ;
+        } while (f < 0) ;
+        cout << f << "! = " << factorial(f) << endl ;
+    }
+    cout << "Do you want to calculate the sum of the n powers of 2 ? If yes, write 1 !" ;
+    cin >> r3 ;
+    if (r3 == 1) {
+        do {
+            cout << "Give an integer !" << endl ;
+            cin >> s ;
+        } while (s < 0) ;
+        cout << "The sum of the " << s << " powers of 2 is " << sum_powers_2(s) << endl ;
+    }
+    return 0 ;
+}
