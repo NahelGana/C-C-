@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std ;
+
+int main(void) {
+    float n, lb, ub ;
+    do {
+        cout << "Give an interval !" ;
+        cin >> lb >> ub ;
+    } while (lb > ub) ;
+    do {
+        cout << "Give a value between " << lb <<" and " << ub << "." ;
+        cin >> n ;
+    } while (n < lb || n > ub) ;
+    return 0 ;
+}
