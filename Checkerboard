@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std ;
+
+int main(void) {
+    int i, j, length, width ;
+    char character ;
+    cout << "What is the desired character ?" ;
+    cin >> character ;
+    cout << "What is the length and the width of the checkerboard ?" ;
+    cin >> length >> width ;
+    for (i = 1 ; i <= width ; i = i + 1) {
+        for (j = 1 ; j <= length ; j = j + 1) {
+            if ((i % 2 == 1) && (j % 2 == 1)) {
+                cout << character ;
+            }
+            else if ((i % 2 == 0) && (j % 2 == 0)) {
+                cout << character ;
+            }
+            else {
+                cout << " " ;
+            }
+        }
+        cout << endl ;
+    }
+    return 0 ;
+}
