@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std ;
+int main(void) {
+    int i, j, length, width ;
+    cout << "What is the length and the width of the rectangle ?" ;
+    cin >> length >> width ;
+    for (i = 1 ; i <= width ; i = i + 1) {
+        for (j = 1 ; j <= length ; j = j + 1) {
+            cout << "*" ;
+        }
+        cout << endl ;
+    }
+}
